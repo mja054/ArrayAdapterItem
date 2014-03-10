@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/uuid_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="UUID..."
+        android:paddingRight="5dp"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/major_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uuid_text"
+        android:text="Major number:"
+        android:paddingRight="5dp"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/major_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uuid_text"
+        android:layout_toRightOf="@id/major_num_text"
+        android:text="Major number..."
+        android:paddingRight="5dp"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/minor_num_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/major_num"
+        android:layout_below="@id/uuid_text"
+        android:paddingLeft="5dp"
+        android:text="Minor number:"
+        android:textSize="15dp" />
+
+        <TextView
+        android:id="@+id/minor_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/minor_num_text"
+        android:layout_below="@id/uuid_text"
+        android:paddingLeft="5dp"
+        android:text="Minor number..."
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/rssi_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/major_num"
+        android:text="rssi..."
+        android:textSize="15dp" />
+     
+</RelativeLayout>

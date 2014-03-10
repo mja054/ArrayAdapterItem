@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>                                                                                                                                            
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent" android:layout_width="match_parent"
+    android:orientation="vertical">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="0dip" android:layout_weight="1"
+        android:fillViewport="true"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip">
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--
+                    Empty container for storing attachments. We'll stick
+                    instances of message_compose_attachment.xml in here.
+                -->
+                <LinearLayout android:id="@+id/attachments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" 
+                 />
+            </LinearLayout>
+            <include layout="@layout/compose_body"/>
+            <include layout="@layout/major_number"/>
+            <include layout="@layout/minor_number"/>
+            <Button
+                android:id="@+id/send"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Send" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
